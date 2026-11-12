@@ -3,42 +3,36 @@
 
 #print(num1 + num2)
 
-def calculadora():
-    print("--- CALCULADORA SIMPLIFICADA ---")
-    print("1. Restar (a - b)")
-    print("2. Multiplicar (a * b)")
-    print("3. Dividir (a / b)")
-    print("4. Módulo (a % b)")
-    print("5. Sumar 3 números")
-    print("6. Expresión combinada (ej: 2 + 4 - 3 o 4 * 5 + 1 / 3)")
 
-    opcion = input("Elige una opción (1-6): ")
+num1 = float(input("Ingrese el primer numero: "))
+num2 = float(input("Ingrese el segundo numero: "))
 
-if opcion in ['1', '2', '3', '4']:
-    a = float(input("Ingresa el primer número: "))
-    b = float(input("Ingresa el segundo número: "))
-    
-    if opcion == '1':
-        print("Resultado:", a - b)
-    elif opcion == '2':
-        print("Resultado:", a * b)
-    elif opcion == '3':
-        if b != 0:
-            print("Resultado:", a / b)
-        else:
-            print("Error: No se puede dividir entre cero.")
-    elif opcion == '4':
-        print("Resultado:", a % b)
+print("La resta es:", num1 - num2 )
+print("La multiplicacion es:", num1 * num2 )
+print("La division es:", num1 / num2) 
+print("El residuo es:", num1 % num2)
 
-elif opcion == '5':
-    a = float(input("Primer número: "))
-    b = float(input("Segundo número: "))
-    c = float(input("Tercer número: "))
-    print("Resultado:", a + b + c)
+a = float(input("Enter num1: "))
+op = input("Operador (+, -, *, /, %): ")
+b =float(input("Enter num2: "))
 
-elif opcion == '6':
-    operacion = input("Escribe la operación (ej. 4 * 5 + 1 / 3): ")
-    print("Resultado:", eval(operacion))
+if op == "+":
+     print(a + b)
+elif op == "-":
+     print(a - b)
+elif op == "*": 
+     print(a * b)
+elif op == "/":
+     print(a / b)
+elif op == "%":
+     print(a % b)
 
-else:
-    print("Opción no válida.")
+num1 = float(input("Ingrese el primer numero: "))
+num2 = float(input("Ingrese el segundo numero: "))
+num3 = float(input("Ingrese el tercer numero: "))
+
+print("La suma es :", num1 + num2 + num3)
+
+numeros = input("Escribe la operacion:")
+print("Resultado :", eval(numeros))
+
